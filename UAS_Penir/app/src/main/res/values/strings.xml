@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Donasiku</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string-array name="daftaritem">
+        <item>Masker N95</item>
+        <item>Pakaian Hazmat</item>
+        <item>Hand Sanitizer</item>
+        <item>Nasal Swab</item>
+    </string-array>
+</resources>
