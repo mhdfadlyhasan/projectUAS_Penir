@@ -37,7 +37,7 @@ class KebutuhanActivity : AppCompatActivity() {
         window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
         supportActionBar?.hide()
         setContentView(R.layout.activity_kebutuhan)
-
+        val List_Donasi = list_of_donasi
         //val useremail = intent.getStringExtra(MainActivity.U_EMAIL)
 
         buttonSubmit.setOnClickListener {
@@ -67,11 +67,14 @@ class KebutuhanActivity : AppCompatActivity() {
 //            q.add(sr)
             var jumlah = editTextJumlah.text.toString()
             var id = spinnerKebutuhan.selectedItemPosition
+
+            List_Donasi.add_item("barang",jumlah.toInt())//membuat entry baru di dalam list donasi
+
             //val daftardonasi = intent.getStringArrayListExtra(DonasiActivity.U_DAFTAR)
+
             Toast.makeText(this,"sukses",Toast.LENGTH_SHORT).show()
 
             var intent = Intent(this,DonasiActivity::class.java)
-
 //            val fragment = ListDonasiFragment()
 //            val bundle = Bundle()
 //            bundle.putInt("d_id",id)

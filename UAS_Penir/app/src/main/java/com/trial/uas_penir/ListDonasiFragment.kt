@@ -28,7 +28,7 @@ class ListDonasiFragment : Fragment() {
         val view:View = inflater.inflate(R.layout.fragment_list_donasi, container, false)
         val listViewDonasi = view.findViewById<ListView>(R.id.listDonasi)
 
-        val daftarDonasiUser = mutableListOf<DaftarDonasi>() // move it to somewhere
+        val daftarDonasiUser = list_of_donasi.get_list() // move it to somewhere
         val id = arguments?.getInt("d_id") ?: 0
         val name = arguments?.getString("d_name") ?: ""
         val sum = arguments?.getInt("d_amount") ?: 0
